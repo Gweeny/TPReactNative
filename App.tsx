@@ -46,7 +46,7 @@ export default function App() {
     <View style={styles.container}>
       <Animated.View style={[styles.square, { transform: [{ rotate: spinInterpolate }] }]} />
       <Animated.Text style={[styles.title, { transform: [{ translateY: bounce }] }]}>
-        🤡 LOOMS 🤡
+        🤡 TP react Native 🤡
       </Animated.Text>
       <Animated.View style={[styles.circle, { transform: [{ translateX: wiggle }] }]} />
       <View style={styles.triangle} />
@@ -62,7 +62,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#00ff2a', alignItems: 'center', justifyContent: 'center', gap: 20 },
+  container: { flex: 1, backgroundColor: '#ffee00', alignItems: 'center', justifyContent: 'center', gap: 20 },
   square: { width: 80, height: 80, backgroundColor: '#00ff00', borderWidth: 5, borderColor: '#ff0000' },
   circle: { width: 100, height: 100, borderRadius: 50, backgroundColor: '#ffff00', borderWidth: 8, borderColor: '#0000ff' },
   triangle: { width: 0, height: 0, borderLeftWidth: 50, borderRightWidth: 50, borderBottomWidth: 100, borderLeftColor: 'transparent', borderRightColor: 'transparent', borderBottomColor: '#ff6600' },
