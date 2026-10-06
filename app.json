@@ -16,7 +16,8 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.gweeny.TPReactNative"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -26,6 +27,12 @@
         "projectId": "ee1593e1-47a0-4f68-9d22-85092fe33420"
       }
     },
-    "owner": "gweeny"
+    "owner": "gweeny",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/ee1593e1-47a0-4f68-9d22-85092fe33420"
+    }
   }
 }
