@@ -20,6 +20,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ee1593e1-47a0-4f68-9d22-85092fe33420"
+      }
+    },
+    "owner": "gweeny"
   }
 }
