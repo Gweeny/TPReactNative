@@ -1,19 +1,19 @@
-	import { ScrollView, StyleSheet, Text, View } from "react-native";
+	import { FlatList, ListRenderItem, StyleSheet, Text, View } from "react-native";
 	import { usePerf } from "./perf";
-	import { RecipeCard } from "./RecipeCard";
-	import { ALL_RECIPES } from "./recipes-api";
+	import { MemoRecipeCard } from "./RecipeCard";
+	import { ALL_RECIPES, Recipe } from "./recipes-api";
+	 
+	// Définis hors du composant : les références restent identiques d'un rendu à l'autre
+	const renderItem: ListRenderItem<Recipe> = ({ item }) => <MemoRecipeCard recipe={item} />;
+	const keyExtractor = (item: Recipe) => item.id;
 	 
 	export function RecipeList() {
-	  const mounted = usePerf("ScrollView + map");
+	  const mounted = usePerf("FlatList + memo");
 	 
 	  return (
 	    <View style={{ flex: 1 }}>
 	      <Text style={styles.counter}>Cartes montées : {mounted}</Text>
-	      <ScrollView>
-	        {ALL_RECIPES.map((recipe) => (
-	          <RecipeCard key={recipe.id} recipe={recipe} />
-	        ))}
-	      </ScrollView>
+	      <FlatList data={ALL_RECIPES} renderItem={renderItem} keyExtractor={keyExtractor} />
 	    </View>
 	  );
 	}
