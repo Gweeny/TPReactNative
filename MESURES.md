@@ -100,3 +100,15 @@ Android Bundled 60ms index.ts (1 module)
  Android Bundled 62ms index.ts (1 module)
  LOG  [perf] FlashList paginée : monté en 195 ms
  500
+
+
+
+--------------------------------------------
+npx expo start --no-dev --minify : 
+
+Android Bundled 60ms index.ts (1 module)
+ LOG  [perf] ScrollView + map : monté en 4063 ms
+
+ Android Bundled 47ms index.ts (1 module)
+ LOG  [perf] FlatList + memo : monté en 346 ms
+
