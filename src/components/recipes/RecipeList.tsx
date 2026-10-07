@@ -1,19 +1,20 @@
-	import { FlatList, ListRenderItem, StyleSheet, Text, View } from "react-native";
+	import { FlashList } from "@shopify/flash-list";
+	import { StyleSheet, Text, View } from "react-native";
 	import { usePerf } from "./perf";
 	import { MemoRecipeCard } from "./RecipeCard";
-	import { ALL_RECIPES, Recipe } from "./recipes-api";
-	 
-	// Définis hors du composant : les références restent identiques d'un rendu à l'autre
-	const renderItem: ListRenderItem<Recipe> = ({ item }) => <MemoRecipeCard recipe={item} />;
-	const keyExtractor = (item: Recipe) => item.id;
+	import { ALL_RECIPES } from "./recipes-api";
 	 
 	export function RecipeList() {
-	  const mounted = usePerf("FlatList + memo");
+	  const mounted = usePerf("FlashList");
 	 
 	  return (
 	    <View style={{ flex: 1 }}>
 	      <Text style={styles.counter}>Cartes montées : {mounted}</Text>
-	      <FlatList data={ALL_RECIPES} renderItem={renderItem} keyExtractor={keyExtractor} />
+	      <FlashList
+	        data={ALL_RECIPES}
+	        renderItem={({ item }) => <MemoRecipeCard recipe={item} />}
+	        keyExtractor={(item) => item.id}
+	      />
 	    </View>
 	  );
 	}

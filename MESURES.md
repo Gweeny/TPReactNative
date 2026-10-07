@@ -66,3 +66,20 @@ Android Bundled 46ms index.ts (1 module)
  › Reloading apps
 Android Bundled 59ms index.ts (1 module)
  LOG  [perf] FlatList + memo : monté en 121 ms
+
+
+
+ ---------------------------------
+ Android Bundled 84ms index.ts (1 module)
+ LOG  [perf] FlashList : monté en 211 ms
+1000
+
+
+
+AAndroid Bundled 62ms index.ts (1 module)
+ LOG  [perf] FlashList : monté en 209 ms
+ Avec 5000
+
+ Android Bundled 63ms index.ts (1 module)
+ LOG  [perf] FlashList : monté en 196 ms
+ 500
