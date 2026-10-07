@@ -83,3 +83,20 @@ AAndroid Bundled 62ms index.ts (1 module)
  Android Bundled 63ms index.ts (1 module)
  LOG  [perf] FlashList : monté en 196 ms
  500
+
+
+
+
+ -------------------------------------
+
+ Android Bundled 51ms index.ts (1 module)
+ LOG  [perf] FlashList paginée : monté en 177 ms
+5000
+
+Android Bundled 60ms index.ts (1 module)
+ LOG  [perf] FlashList paginée : monté en 184 ms
+ 1000
+
+ Android Bundled 62ms index.ts (1 module)
+ LOG  [perf] FlashList paginée : monté en 195 ms
+ 500
