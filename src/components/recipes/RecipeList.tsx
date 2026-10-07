@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+	import { ScrollView, StyleSheet, Text, View } from "react-native";
 	import { usePerf } from "./perf";
 	import { RecipeCard } from "./RecipeCard";
 	import { ALL_RECIPES } from "./recipes-api";

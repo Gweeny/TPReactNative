@@ -6,13 +6,63 @@ FPS UI / JS au plus bas : ... / ...
 
 
 
- LOG  [perf] ScrollView + map : monté en 166572 ms
+
+Android Bundled 39ms index.ts (1 module)
+ LOG  [perf] ScrollView + map : monté en 6482 ms
 Avec 1000 cartes
 
+Android Bundled 60ms index.ts (1 module)
+ LOG  [perf] ScrollView + map : monté en 11112 ms
+ Avec 2000 cartes
 
 
- LOG  [perf] ScrollView + map : monté en 279054 ms
-Avec 500
+Android Bundled 45ms index.ts (1 module)
+ LOG  [perf] ScrollView + map : monté en 1672 ms
+ Avec 500 cartes 
 
- LOG  [perf] ScrollView + map : monté en 332193 ms
-Avec 2000
+---------------------------------------------
+
+Android Bundled 89ms index.ts (1 module)
+ LOG  [perf] FlatList : monté en 298 ms
+Avec 1000
+
+
+Android Bundled 57ms index.ts (1 module)
+ LOG  [perf] FlatList : monté en 349 ms
+Avec 500 
+
+
+Android Bundled 56ms index.ts (1 module)
+ LOG  [perf] FlatList : monté en 347 ms
+ Avec 2000
+
+
+
+
+--------------------------------
+
+Android Bundled 30ms index.ts (1 module)
+ LOG  [perf] FlatList + memo : monté en 122 ms
+ Avec 2000
+
+
+ Android Bundled 37ms index.ts (1 module)
+ LOG  [perf] FlatList + memo : monté en 124 ms
+ Avec 1000
+
+ Android Bundled 43ms index.ts (1 module)
+ LOG  [perf] FlatList + memo : monté en 112 ms
+ Avec 500
+
+Android Bundled 41ms index.ts (1 module)
+ LOG  [perf] FlatList + memo : monté en 138 ms
+ Avec 5000
+ 
+Android Bundled 46ms index.ts (1 module)
+ LOG  [perf] FlatList + memo : monté en 107 ms
+ Avec 50000
+
+ Windows size 3 : 
+ › Reloading apps
+Android Bundled 59ms index.ts (1 module)
+ LOG  [perf] FlatList + memo : monté en 121 ms
