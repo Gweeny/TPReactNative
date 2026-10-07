@@ -4,7 +4,7 @@
 	  minutes: number;
 	};
 	 
-	export const TOTAL_RECIPES = 5000;
+	export const TOTAL_RECIPES = 1000;
 	const PAGE_SIZE = 30;
 	 
 	export const ALL_RECIPES: Recipe[] = Array.from({ length: TOTAL_RECIPES }, (_, i) => ({
