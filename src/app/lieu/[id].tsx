@@ -2,16 +2,17 @@
 	import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 	import { useState } from "react";
 	import { Button, StyleSheet, Text, View } from "react-native";
-	 
+	 import { useFocusEffect } from "expo-router";
 	import { getLieu } from "@/data/lieux";
 	import { useLifecycleLog } from "@/hooks/use-lifecycle-log";
-	 
+	 import { useCallback } from "react";
+     
 	export default function LieuScreen() {
 	  const { id, from } = useLocalSearchParams<{ id: string; from?: string }>();
 	  const router = useRouter();
 	  const [compteur, setCompteur] = useState(0);
 	  useLifecycleLog(`Lieu ${id}`);
-	 
+
 	  const lieu = getLieu(id);
 	  if (!lieu) {
 	    return (
@@ -21,6 +22,15 @@
 	      </View>
 	    );
 	  }
+
+              // Le timer ne tourne que lorsque l'écran est au premier plan
+    useFocusEffect(
+      useCallback(() => {
+        const id = setInterval(() => console.log(`tick ${lieu.nom}`), 1000);
+        return () => clearInterval(id);
+      }, [lieu.nom]),
+    );
+	 
 	 
 	  const suivant = String(Number(id) + 1);
 	 
